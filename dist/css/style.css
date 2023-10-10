@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text-size-max {
   font-size: 40px;
 }
@@ -47,6 +51,10 @@
   font-weight: 400;
   font-style: normal;
 }
+a {
+  color: black;
+}
+
 .header {
   padding: 0 15px;
   display: flex;
@@ -101,10 +109,12 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: 620px;
 }
 .example-picture .example-picture__block .example-picture__block__picture {
-  width: 500px;
-  height: 500px;
+  width: auto;
+  height: 100%;
   grid-column: 1;
   background-image: url(../img/example-picture/Bird.svg);
   background-repeat: no-repeat;
@@ -121,8 +131,13 @@
   font-size: 18px;
 }
 .example-picture .example-picture__block .example-picture__block__text .button {
+  margin-top: 60px;
   display: inline-flex;
+  width: 225px;
   height: 65px;
   justify-content: center;
   align-items: center;
+  border: 1px solid #598D66;
+  text-decoration: none;
+  color: #598D66;
 }

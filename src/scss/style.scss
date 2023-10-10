@@ -1,13 +1,16 @@
 * {
     margin: 0px;
     padding: 0px;
-
+    
 }
 
 body {
     // font-family: Relewey;
     // font-weight: 500;
 
+}
+a {
+    text-decoration: none;
 }
 
 .text-size-max{
@@ -28,7 +31,8 @@ body {
 
 @import "fonts";
 @import "header";
-@import "example-picture"
+@import "example-picture";
+@import "card";
 
 
 
