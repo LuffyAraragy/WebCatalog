@@ -1,0 +1,52 @@
+
+
+.header {
+    
+    padding: 0 15px;//Мэйби так должно быть
+    display: flex;
+    background-color: #E1EDE6; 
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.logo {
+    background-image: url(../img/header/Star1.svg);
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    //надо поставить ограничение чтоб экран не сползал
+}
+
+.text-logo {
+    //надо поставить ограничение чтоб экран не сползал
+    padding-left: 8px;
+    
+}
+
+.header__all-href {
+    display: flex;
+    gap: 60px;
+    
+
+    .nav_item {
+        list-style-type: none;
+        gap: 10px;
+    }
+}

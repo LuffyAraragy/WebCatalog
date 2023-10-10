@@ -1,0 +1,47 @@
+.example-picture {
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .example-picture__block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        //gap: 10px;
+        justify-content: center;
+        align-items: center;
+        
+        
+        .example-picture__block__picture {
+            width: 500px;
+            height: 500px;
+            grid-column: 1;
+            background-image: url(../img/example-picture/Bird.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .example-picture__block__text {
+            grid-column: 2;
+            //padding
+
+            .h1 {
+                font-size: 60px;
+            }
+            .text {
+                padding-top: 20px;
+                font-size: 18px;
+            }
+            .button {
+                display: inline-flex;
+                height: 65px;
+
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+    }
+}

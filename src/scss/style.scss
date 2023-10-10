@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    // font-family: Relewey;
+    // font-weight: 500;
+
+}
+
+.text-size-max{
+    font-size: 40px;
+}
+.text-size-medium{
+    font-size: 20px;
+}
+.text-size-min{
+    font-size: 18px;
+}
+
+.text-size-card{
+    font-size: 30px;
+}
+
+
+
+@import "fonts";
+@import "header";
+@import "example-picture"
+
+
+
+
+
+
+
+
+// .test-grid-1 {
+//     width: 1000px;
+//     height: 1000px;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 100px 200px 300px;
+    
+
+//     grid-template-areas: 
+//     "one-block two-block two-block"
+//     "three-block fore-block fore-block"
+//     "five-block six-block six-block";
+// }
+
+// .one {
+//     background: blueviolet;
+//     grid-area: two-block;
+// }
+    
+// .two {
+//     background: yellow;
+//     grid-area: five-block;
+// }
+
+// .three {
+//     grid-area: six-block;
+//     background: green
+// }
+
+
+
+
+
+
+
+    // display: flex;
+    // flex-wrap: wrap;// перено блоков нановую строку
+    // align-items: center; //выравнивание по дочерний линии 
+    // justify-content: center; //выравнивание основной линии
+    // flex-direction: column;//позволяет поменять основую ось на дочернюю
+    // align-self: center;// выравнивание по поперечной оси в виде шахмотной доски
+    // order: 1;//управление порядком блоков которые нахдяться вниутри
+    // justify-self: center; //выравнивание по оси строки  внутри самого блока элемента , может прижимать кверху сетки и т д
+    // justify-items: center; //выравнивание по оси строки внутри самого блока элемента , может прижимать кверху сетки и т д
+    // align-self: center;//выравниввание по оси столбца
+    // align-items: center;//выравниввание по оси столбца
+    // row-gap: 2px;// создаёт отступы между строками 
+    // column-gap: 2px;// создаёт отступы между колонками
+
+    //transition-duration: 2s; //столько времени будет действовать анимация смены цвета кнопки 
+    //transition-delay: 1s; //столько секунд будет действовать задержка, после которой кнопка начнёт затухать или проходить какая то анимация
+    //transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);//странные состояни изменения анимации кнопки
+    //transition-property: background-color, top; // переход будет применяться только к свойствам background-color, top;
+
+    
+//     .main__text{
+
+//         &--green {  //Music - Theory Of A Deadman - Angel
+        
+//     }
+// }
+
+
+//@media screen and (min-width: 1024px)
+//@media screen and (min-width: 1337px) 
+
+
+
