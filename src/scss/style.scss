@@ -27,12 +27,25 @@ a {
     font-size: 30px;
 }
 
+.button {
+    margin-top: 60px;
+    display: inline-flex; 
+    width: 225px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
 
 
 @import "fonts";
 @import "header";
 @import "example-picture";
 @import "card";
+@import "description";
+@import "all-team";
 
 
 

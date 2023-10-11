@@ -23,6 +23,16 @@ a {
   font-size: 30px;
 }
 
+.button {
+  margin-top: 60px;
+  display: inline-flex;
+  width: 225px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: Ostrovsky;
   font-display: swap;
@@ -130,14 +140,53 @@ a {
   padding-top: 20px;
   font-size: 18px;
 }
-.example-picture .example-picture__block .example-picture__block__text .button {
-  margin-top: 60px;
-  display: inline-flex;
-  width: 225px;
-  height: 65px;
-  justify-content: center;
-  align-items: center;
+.example-picture .example-picture__block .example-picture__block__text .example-picture__button {
   border: 1px solid #598D66;
-  text-decoration: none;
   color: #598D66;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/description/Rectangle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.description-block {
+  padding: 0 15px;
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+.description-block .description-blick__img-text {
+  display: flex;
+  align-items: center;
+}
+.description-block__img {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/description/StarDescription.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.description-block__text {
+  color: #F4F6F5;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  padding-left: 20px;
+  max-width: 421px;
+}
+.description-block .description-block__text-2 {
+  color: white;
+  max-width: 540px;
+}
+.description-block .description-block__button {
+  background: #EEDB6D;
+  color: #000;
+  margin-bottom: 70px;
 }
