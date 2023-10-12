@@ -2,8 +2,6 @@
     background-color: white;
     width: auto;
     height: auto;
-    padding-right: 15px;
-    padding-left: 15px;
 
     .example-picture__block {
         display: grid;
@@ -38,8 +36,7 @@
                 font-size: 18px;
             }
             .example-picture__button {
-                border: 1px solid #598D66; 
-                color: #598D66;
+                margin-top: 60px;
             }
 
         }
