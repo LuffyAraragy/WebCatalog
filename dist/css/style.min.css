@@ -9,28 +9,41 @@
   max-width: 1140px;
 }
 
-a {
-  text-decoration: none;
+.heading-1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #2C2D35;
+  line-height: 110%;
+}
+.heading-1--green {
+  color: #598D66;
 }
 
-.text-size-max {
+.heading-2 {
   font-size: 40px;
+  font-weight: 500;
+  color: #2C2D35;
+  line-height: 100%;
+}
+.heading-2--white {
+  color: #F4F6F5;
 }
 
-.text-size-small {
-  font-size: 24px;
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2C2D35;
+  line-height: 150%;
 }
-
-.text-size-medium {
+.text--white {
+  color: #F4F6F5;
+}
+.text--lg {
   font-size: 20px;
 }
 
-.text-size-min {
-  font-size: 18px;
-}
-
-.text-size-card {
-  font-size: 30px;
+a {
+  text-decoration: none;
 }
 
 .button {
@@ -48,11 +61,6 @@ a {
 .button--yellow {
   color: #2C2D35;
   background-color: #EEDB6D;
-}
-
-.all-team__img {
-  width: 80px;
-  height: 80px;
 }
 
 @font-face {
@@ -141,7 +149,7 @@ a {
   width: auto;
   height: 620px;
 }
-.example-picture .example-picture__block .example-picture__block__picture {
+.example-picture .example-picture__block .picture {
   width: auto;
   height: 100%;
   grid-column: 1;
@@ -149,18 +157,48 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.example-picture .example-picture__block .example-picture__block__text {
+.example-picture .example-picture__block .example-picture__descriptino {
   grid-column: 2;
 }
-.example-picture .example-picture__block .example-picture__block__text .h1 {
-  font-size: 60px;
+.example-picture .example-picture__block .example-picture__descriptino .example-picture__text {
+  color: #86928B;
 }
-.example-picture .example-picture__block .example-picture__block__text .text {
+.example-picture .example-picture__block .example-picture__descriptino .text {
   padding-top: 20px;
   font-size: 18px;
 }
-.example-picture .example-picture__block .example-picture__block__text .example-picture__button {
+.example-picture .example-picture__block .example-picture__descriptino example-picture__text .example-picture__button {
   margin-top: 60px;
+}
+
+.card-block_button {
+  max-width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  align-items: flex-start;
+  border-radius: 20px;
+  background: #D4E8D9;
+}
+.card-block_button--green {
+  background: #376B44;
+  color: #D4E8D9;
+}
+
+.card-block__menu__switching {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.card-block__menu__text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.card-block__menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-block__catalog {
@@ -221,22 +259,19 @@ a {
   display: flex;
   align-items: center;
 }
-.description-block__img {
+.description-block .description__img {
   width: 80px;
   height: 80px;
   background-image: url(../img/description/StarDescription.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.description-block__text {
-  color: #F4F6F5;
-  font-style: normal;
-  font-weight: 500;
+.description-block .description__text {
   line-height: 100%; /* 40px */
   padding-left: 20px;
   max-width: 421px;
 }
-.description-block .description-block__text-2 {
+.description-block .text-description {
   color: white;
   max-width: 540px;
 }
@@ -244,7 +279,7 @@ a {
   margin-bottom: 70px;
 }
 
-.all-team__block {
+.all-team {
   display: flex;
   align-items: center;
   width: 1440px;
@@ -252,19 +287,19 @@ a {
   margin: 0 auto;
 }
 
-.all-team__block__descriptions {
+.all-team__block-descriptions {
   align-items: center;
   display: grid;
   gap: 20px;
   padding-left: 30px;
 }
 
-.all-team__block__img {
+.all-team__block-img {
   width: 445px;
   height: 440px;
 }
 
-.all-team__block__img-hand {
+.img-hand {
   background-image: url(../img/all-team/Hand.svg);
   width: 400px;
   height: 440px;
@@ -272,7 +307,7 @@ a {
   background-position: 33% 10%;
 }
 
-.all-team__block__img-border {
+.all-team__img-border {
   background-image: url(../img/all-team/Border.svg);
   width: 400px;
   height: 440px;
@@ -281,7 +316,7 @@ a {
   background-position: 0 100%;
 }
 
-.all-team__block__descriptions__team-img {
+.block__team-img {
   display: flex;
   align-items: center;
   justify-content: baseline;
@@ -289,14 +324,18 @@ a {
   height: auto;
   gap: 30px;
 }
-.all-team__block__descriptions__team-img .all-team__img-1 {
-  background-image: url(../img/all-team/Ellipse1.svg);
+
+.all-team__img {
+  width: 80px;
+  height: 80px;
 }
-.all-team__block__descriptions__team-img .all-team__img-2 {
-  background-image: url(../img/all-team/Ellipse2.svg);
-}
-.all-team__block__descriptions__team-img .all-team__img-3 {
-  background-image: url(../img/all-team/Ellipse3.svg);
+
+.text-link {
+  color: #86928B;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .footer {
@@ -308,48 +347,59 @@ a {
   align-items: center;
   grid-template-rows: repeat(2, 1fr);
 }
-.footer .footer_block__1 {
+.footer .footer__logo {
+  display: flex;
+  align-items: center;
   grid-row: 1;
   grid-column: 1;
 }
-.footer .footer_block__2 {
+.footer .footer__phone-number {
   grid-row: 2;
   grid-column: 1;
 }
-.footer .footer_block__3 {
+.footer .footer__countries {
+  grid-column: 2;
+  grid-row: 0/2;
+}
+.footer .footer_new {
   grid-column: 3;
   grid-row: 0/2;
 }
-.footer .footer_block__4 {
+.footer .footer__us {
   grid-column: 4;
   grid-row: 0/2;
 }
-.footer .footer_block__5 {
-  grid-column: 5;
-  grid-row: 0/2;
-}
-.footer .footer_block__6 {
+.footer .footer__social-network {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column: 6;
   grid-row: 0/2;
 }
-.footer .props__1 {
+.footer .social-network {
   width: 24px;
   height: 24px;
-  background-image: url(../img/footer/Frame-1.svg);
 }
-.footer .props__2 {
-  width: 24px;
-  height: 24px;
-  background-image: url(../img/footer/Frame-2.svg);
+.footer .copyright {
+  display: grid;
+  grid-column: 1/4;
+  gap: 8px;
 }
-.footer .props__3 {
-  width: 24px;
-  height: 24px;
-  background-image: url(../img/footer/Frame.svg);
+.footer__all-social-network {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
 }
-.footer .props__text {
-  padding-left: 33%;
-  grid-column: 1/3;
+.footer__text {
+  color: #86928B;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 14.4px */
+}
+
+.logo-text {
+  grid-row: 2;
+  grid-column: 1;
 }

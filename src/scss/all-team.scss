@@ -1,5 +1,5 @@
 
-.all-team__block {
+.all-team {
     display: flex;
     align-items: center;
     width: 1440px;
@@ -7,7 +7,8 @@
     margin: 0 auto;
 }
 
-.all-team__block__descriptions {
+
+.all-team__block-descriptions {
     align-items: center;
     display: grid;
     gap: 20px;
@@ -16,12 +17,12 @@
 
 
 //пока используем флекст если нет то потом грид
-.all-team__block__img {
+.all-team__block-img {
     width: 445px;
     height: 440px;
 }
 
-.all-team__block__img-hand {
+.img-hand {
     background-image: url(../img/all-team/Hand.svg);
     width: 400px;
     height: 440px;
@@ -31,7 +32,7 @@
     background-position: 33% 10%;
 }
 //увеличить её
-.all-team__block__img-border {
+.all-team__img-border {
     background-image: url(../img/all-team/Border.svg);
     width: 400px;
     height: 440px;
@@ -40,7 +41,7 @@
     background-position: 0 100%;
 }
 
-.all-team__block__descriptions__team-img {
+.block__team-img {
     display: flex;
     align-items: center;
     justify-content: baseline;
@@ -49,13 +50,12 @@
     height: auto;
     gap: 30px;
 
-    .all-team__img-1 {
-        background-image: url(../img/all-team/Ellipse1.svg);
-    }
-    .all-team__img-2 {
-        background-image: url(../img/all-team/Ellipse2.svg);
-    }
-    .all-team__img-3 {
-        background-image: url(../img/all-team/Ellipse3.svg);
-    }
+    
 }
+
+.all-team__img {
+    width: 80px;
+    height: 80px;
+}
+
+

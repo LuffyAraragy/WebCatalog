@@ -14,7 +14,7 @@
         height: 620px; 
         
         
-        .example-picture__block__picture {
+        .picture {
             width: auto;
             height: 100%;
             grid-column: 1;
@@ -24,17 +24,19 @@
             
         }
 
-        .example-picture__block__text {
+        .example-picture__descriptino {
             grid-column: 2;
             //padding
 
-            .h1 {
-                font-size: 60px;
+            .example-picture__text {
+                color: #86928B;
             }
             .text {
                 padding-top: 20px;
                 font-size: 18px;
             }
+            example-picture__text
+
             .example-picture__button {
                 margin-top: 60px;
             }

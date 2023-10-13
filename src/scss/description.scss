@@ -32,7 +32,7 @@
         
     }
 
-    &__img {
+    .description__img {
         width: 80px;
         height: 80px;   
         background-image: url(../img/description/StarDescription.svg);
@@ -40,10 +40,7 @@
         background-size: cover;
         
     }
-    &__text {
-        color: #F4F6F5;
-        font-style: normal;
-        font-weight: 500;
+    .description__text {
         line-height: 100%; /* 40px */
         padding-left: 20px;
         max-width: 421px;
@@ -51,7 +48,7 @@
 
     }   
 
-    .description-block__text-2 {
+    .text-description {
         color: white;
         max-width: 540px;
     }

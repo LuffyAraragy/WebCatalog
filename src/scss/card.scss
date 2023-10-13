@@ -1,9 +1,34 @@
 
-
-.card-block {
+.card-block_button {
+    max-width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-start; 
+    border-radius: 20px;
+    background: #D4E8D9;
     
+
+    &--green {
+        background: #376B44; 
+        color: #D4E8D9;
+    }
 }
 
+.card-block__menu__switching {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.card-block__menu__text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.card-block__menu {
+    display: flex;
+    justify-content: space-between;
+}
 
 .card-block__catalog {
     display: grid;

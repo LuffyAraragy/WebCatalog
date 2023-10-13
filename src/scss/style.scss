@@ -10,6 +10,50 @@
     max-width: 1140px;
 }
 
+.heading-1 {
+    //font-family: Raleway;
+    font-size: 60px;
+    font-weight: 500;
+    color: #2C2D35;
+    line-height: 110%;
+
+    &--green {
+        color: #598D66;
+    }
+}
+
+.heading-2 {
+    //font-family: Raleway;
+    font-size: 40px;
+    font-weight: 500;
+    color: #2C2D35;
+    line-height: 100%;
+
+    &--white {
+        color: #F4F6F5;
+    }
+}
+
+
+.text {
+    //font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2C2D35;
+    line-height: 150%;
+
+    
+
+    &--white {
+        color: #F4F6F5;
+    }
+
+    &--lg {
+        font-size: 20px;
+    }
+
+}
+
 body {
     // font-family: Relewey;
     // font-weight: 500;
@@ -20,25 +64,7 @@ a {
     text-decoration: none;
 }
 
-.text-size-max{
-    font-size: 40px;
-}
-.text-size-small {
-    font-size: 24px;
-}
-.text-size-medium{
-    font-size: 20px;
-}
 
-
-
-.text-size-min{
-    font-size: 18px;
-}
-
-.text-size-card{
-    font-size: 30px;
-}
 
 .button {
     display: inline-flex; 
@@ -64,10 +90,7 @@ a {
 
 
 
-.all-team__img {
-    width: 80px;
-    height: 80px;
-}
+
 
 
 
