@@ -34,3 +34,36 @@ buttons.forEach(button => {
     });
 });
 
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+const buttons2 = document.querySelectorAll('.but');
+
+// Добавляем обработчик события для каждой кнопки
+buttons2.forEach(button => {
+    button.addEventListener('click', function() {
+    
+      //можно найти первый объект определёного цвета и поменять цвет на другой
+      let elementsWithBorderClass = document.querySelectorAll(".swipe-menu");
+  
+      // Применяем красный цвет к каждому найденному элементу
+        elementsWithBorderClass.forEach(function(element) {
+        element.style.background = "#D4E8D9";
+        element.style.color = "#2C2D35";
+        
+        //скрывает или открывает данный контент Swiper
+        if(element.style.display == "none"){
+          element.style.display = "block";
+        }
+        else{
+          element.style.display = "none";
+        }
+        
+
+      });
+      
+
+
+    });
+});

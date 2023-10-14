@@ -1,7 +1,40 @@
+ 
+ .but {
+    margin-left: 50%;
+    
+ }
+ 
+
+
+.swipe-menu {
+    background-color: #E1EDE6;
+    box-shadow: 0 3px 10 px rgb(black, .2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 320px;
+    max-width: 100%;
+}
+
+.swipe-menu__close {
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    opacity: 0.5;
+    
+
+}
 
 a {
     color: black;
 }
+
+
 
 .header {
     
