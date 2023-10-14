@@ -5,7 +5,7 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
   max-width: 1140px;
 }
 
@@ -171,17 +171,47 @@ a {
   margin-top: 60px;
 }
 
-.card-block_button {
+.card-text {
+  color: #2C2D35;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-text--groy {
+  color: #86928B;
+}
+.card-text--size-heading-2 {
+  font-size: 30px;
+}
+.card-text--green {
+  color: #598D66;
+  font-size: 24px;
+}
+
+.card-block__batton {
   max-width: 100%;
   display: flex;
+  font-size: 20px;
+  padding: 20px 60px;
+  align-items: center;
+  background: #D4E8D9;
+  border: none;
+  border: 1px solid #598D66;
+  color: #598D66;
+}
+
+.card-block_button-menu {
+  max-width: 100%;
+  display: flex;
+  font-size: 20px;
   padding: 10px 20px;
   align-items: flex-start;
   border-radius: 20px;
   background: #D4E8D9;
-}
-.card-block_button--green {
-  background: #376B44;
-  color: #D4E8D9;
+  border: none;
+  color: #2C2D35;
 }
 
 .card-block__menu__switching {
@@ -199,6 +229,7 @@ a {
 .card-block__menu {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .card-block__catalog {
@@ -213,30 +244,13 @@ a {
   min-width: 300px;
   padding: 20px 20px 30px 20px;
 }
-.card__img {
+.card .card-block_img {
   background-image: url(../img/card/card_art1.jpg);
   width: 100%;
   height: 422px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.card__author {
-  padding-top: 20px;
-}
-.card__label {
-  padding-top: 10px;
-}
-.card__description {
-  padding-top: 8px;
-}
-.card__price {
-  padding-top: 30px;
-}
-.card__button {
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px 0;
 }
 
 .description {

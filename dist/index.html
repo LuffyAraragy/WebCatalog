@@ -20,32 +20,20 @@
                 Ink. House
             </div>
         </div>
-        <div class="header__menu">
-            <nav class="header__nav">
-                <ui class="header__all-href">
-                    <li class="nav_link">
-                        <a href="" class="link">
-                            Репродукции
-                        </a>
-                    </li>
-                    <li class="nav_link">
-                        <a href="" class="link">
-                            Новинки
-                        </a>
-                    </li>
-                    <li class="nav_link">
-                        <a href="" class="link">
-                            О нас
-                        </a>
-                    </li>
-                    <li class="nav_link">
-                        <a href="" class="link">
-                            Pomoika
-                        </a>
-                    </li>
-                </ui>
-            </nav>
-        </div>
+        <div class="header__all-href">
+            <a href="" class="link">
+                Репродукции
+            </a>
+            <a href="" class="link">
+                Новинки
+            </a>
+            <a href="" class="link">
+                О нас
+            </a>
+            <a href="" class="link">
+                Pomoika
+            </a>
+        </div>    
     </div>
 </header>  
          
@@ -74,37 +62,45 @@
 <div class="card-block wrapper">
     <div class="card-block__menu">
         <!-- поменять может быть -->
-        <div class="card-block__menu__text">
-            Репродукция
+        <div class="card-block__menu__text heading-2">
+            Репродукции
         </div>
-        <div class="card-block__menu__switching">
-            <a href="" class="card-block_button">Фрвнция</a>
+        <div class="card-block__menu__switching" id="card-block__link-country">
+            <!-- <a href="" class="card-block_button">Фрвнция</a>
             <a href="" class="card-block_button">Германия</a>
-            <a href="" class="card-block_button">Англия</a>
+            <a href="" class="card-block_button">Англия</a> -->
+            <button class="card-block_button-menu my-button">Франция</button>
+            <button class="card-block_button-menu my-button">Германия</button>
+            <button class="card-block_button-menu my-button">Англия</button>
+            <!-- <button class="card-block_button" onclick="alert('Hi gay')">
+                Англия Тест
+            </button> -->
         </div>
     </div>
     <div class="card-block__catalog">
         <div class="card">
-            <div class="card__img">
+            <div class="card-block_img">
             </div>
-            <div class="card__author text-size-min">
+            <div class="card-block__author card-text card-text--groy">
                 Франсуа Дюпон
             </div>
-            <div class="card__label text-size-card">
+            <div class="card-block__label card-text card-text--size-heading-2">
                 Охота Амура
             </div>
-            <div class="card__description text-size-min">
+            <div class="card-block__description card-text">
                 Холст, масло (50х80) 
             </div>
-            <div class="card__price text-size-small">
+            <div class="card-block__price card-text card-text--green">
                 14 500 руб
             </div>
-            <div class="button button--border-green card__button">
+            <!-- Какая то ошибка -->
+            <div class="button card-block__batton">
                 В корзину
             </div>
         </div>
     </div>
 </div>
+
          
 
 <div class="description">
@@ -150,7 +146,7 @@
             Мы вынуждены отталкиваться от того, 
             что консультация с широким активом.
         </div>
-        <div class="block__team-img">
+        <div class="block__team-img" id="all-team__about-us">
             <img class="all-team__img" src="../img/all-team/Ellipse1.svg">
                 
             </img>
@@ -187,39 +183,38 @@
             <div class="text">
                 Репродукции
             </div>
-            <div class="text-link">
+            <a href="#card-block__link-country" class="text-link">
                 Франция
-            </div>
-            <div class="text-link">
+            </a>
+            <a href="#card-block__link-country" class="text-link">
                 Германия
-            </div>
-            <div class="text-link">
+            </a>
+            <a href="#card-block__link-country" class="text-link">
                 Англия
-            </div>
-            
+            </a>
         </div>
         <div class="footer_new">
             <div class="text">
                 Новинки
             </div>
-            <div class="text-link">
+            <a href="#card-block__link-country" class="text-link">
                 2021
-            </div>
-            <div class="text-link">
+            </a>
+            <a href="#card-block__link-country" class="text-link">
                 2020
-            </div>
+            </a>
         </div>
         <div class="footer__us">
             <!-- line-height: 150%; отсутствует -->
             <div class="text">
                 О нас
             </div>
-            <div class="text-link">
+            <a href="#all-team__about-us" class="text-link">
                 Художники
-            </div>
-            <div class="text-link">
+            </a>
+            <a href="#all-team__about-us" class="text-link">
                 Менеджеры
-            </div>
+            </a>
         </div>
         <div class="footer__social-network">
             <!-- Сделать туту див блок с картинками -->
