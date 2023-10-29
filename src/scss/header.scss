@@ -1,0 +1,132 @@
+ 
+.text-logo {
+    color: #598D66;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ .but {
+    display: none;
+ }
+
+
+.swipe-menu {
+    background-color: #E1EDE6;
+    box-shadow: 0 3px 10 px rgb(black, .2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 320px;
+    max-width: 100%;
+}
+
+.swipe-menu__close {
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    opacity: 0.5;
+    
+
+}
+//Не правильно но всё равно
+a {
+    color: black;
+}
+
+
+
+.header {
+    display: flex;
+    background-color: #E1EDE6; 
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header__logo { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.logo {
+    background-image: url(../img/header/Star1.svg);
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    //надо поставить ограничение чтоб экран не сползал
+}
+
+.text-logo {
+    //надо поставить ограничение чтоб экран не сползал
+    padding-left: 8px;
+    
+}
+
+.header__all-href {
+    display: flex;
+    gap: 60px;
+    
+
+    .nav_item {
+        list-style-type: none;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    .header__container {
+        display: grid;
+        gap: 16px;
+        width: auto;
+    }
+
+    .header__logo {
+        border-bottom: 2px solid #C3D1C6;
+    }
+}
+
+ @media (max-width: 320px) {
+    .header {
+        justify-content: normal;
+        display: block;
+    }
+    
+    .header__all-href {
+        display: none;
+    }
+    .header__logo {
+        border: 0;
+        
+    }
+    .header__container {
+        justify-content: center;
+        background-color: white;
+        height: 68px;
+    }
+    
+
+    .but {
+        display: flex;
+        margin-top: 8px;
+     }
+ }

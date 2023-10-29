@@ -1,0 +1,66 @@
+.example-picture {
+    background-color: white;
+    width: auto;
+    height: auto;
+
+   
+}
+
+.example-picture__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    //gap: 10px;
+    justify-content: center;
+    align-items: center;
+    //Добавил разрешение
+    width: auto;
+    height: 620px; 
+    
+    
+    
+}
+.picture {
+    max-width: 100%; 
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.example-picture__descriptino {
+    grid-column: 2;
+    margin-left: 30px;
+
+    
+
+}
+.example-picture__text {
+    color: #86928B;
+    margin-top: 20px;
+}
+
+
+
+.example-picture__button {
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
+    
+    
+}
+
+@media (max-width: 320px) {
+    .example-picture__block {
+        display: grid;
+        grid-template-columns: none;
+    }
+    .picture {
+        display: none;
+    }
+}

@@ -1,0 +1,167 @@
+
+.text-link {
+    color: #86928B;
+    //font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.footer__block {
+    padding-top: 23px;
+}
+
+.footer {
+    
+    background-color: #E1EDE6; 
+    
+
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+    .footer__phone-number {
+        
+    }
+
+
+    
+
+    
+// поменять 
+    .social-network {
+        width: 24px;
+        height: 24px;
+        
+    }
+    
+
+    
+
+    &__all-social-network {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    &__text {
+        color: #86928B;
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 14.4px */ 
+    }
+
+
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__social-network {
+    height: 68px;
+    display: grid;
+    justify-content: flex-end;
+}
+
+.footer-information {
+    display: flex;
+    gap: 60px;
+}
+
+.copyright {
+    display: grid;
+}
+
+@media (max-width: 768px) {
+    //кастыль
+    .logo-text {
+        margin-top: 6px;
+    }
+    .footer__block {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        display: flex;
+        grid-column: 1/4;
+        justify-content: space-between;
+    }
+    .footer__logo {
+        align-items: normal;
+        
+    }
+    .footer__social-network {
+        grid-column: 3;
+        justify-content: normal;
+
+    }
+
+
+    
+}
+
+@media (max-width: 576px) {
+    .footer__block {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .footer-information {
+        border-bottom: 2px solid #C3D1C6;
+    }
+
+    .footer__social-network {
+        margin-top: 40px;
+        justify-content: center;
+        grid-column: 1/2;
+        
+    }
+    .footer__copyright {
+        display: flex;
+    }
+    .footer__all-social-network {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 507px) {
+    .footer__block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-content {
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .footer__block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-information {
+        display: block;
+        grid-column: 2;
+        grid-row: 1/3;
+        border-bottom: none;
+        
+    }
+    .footer__social-network {
+        grid-column: 1/3;
+        grid-row: 3;
+        padding-top: 20px;
+        border-top: 2px solid #C3D1C6;
+    }
+    
+    
+}

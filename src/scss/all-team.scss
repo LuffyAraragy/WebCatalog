@@ -1,0 +1,87 @@
+
+.all-team {
+    display: flex;
+    align-items: center;
+    // width: 1440px;
+    // height: auto;
+    width: 100%;//добавил
+    height: 100%;//добавил
+    margin: 70px auto 70px auto;
+}
+
+
+.all-team__block-descriptions {
+    display: grid;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 18px;//добавил
+}
+
+
+//пока используем флекст если нет то потом грид
+.all-team__block-img {
+    max-width: 440px;
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+    // width: 445px;
+    // height: 440px;
+}
+
+.img-hand {
+    background-image: url(../img/all-team/Hand.svg);
+    width: 400px;
+    height: 440px;
+    //background-size: contain;
+    background-repeat: no-repeat;
+    //Кастыль
+    background-position: 33% 10%;
+}
+//увеличить её
+.all-team__img-border {
+    //background-image: url(../img/all-team/FrameHeand.png);
+    width: 400px;
+    height: 440px;
+    //background-size: contain;
+    background-repeat: no-repeat;
+    // background-position: 0 100%;
+}
+
+.block__team-img {
+    display: flex;
+    gap: 30px;
+}
+
+.all-team__img {
+    width: 80px;
+    height: 80px;
+}
+
+
+@media (max-width: 768px) {
+    .all-team {
+        display: grid;
+
+        &__block-descriptions {
+            padding-left: 0px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .all-team {
+        margin-top: 50px;
+
+        &__block-descriptions {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    
+}
+
+@media (max-width: 320px) {
+    
+}

@@ -1,0 +1,201 @@
+
+.card-block {
+    margin-top: 70px;
+}
+//сделал, дать на проверку
+.card-text {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+
+
+    &--groy {
+        color: #86928B; 
+        
+    }
+
+    &--size-heading-2 { 
+        font-size: 30px;
+    }
+
+    &--green {
+        color: #598D66; 
+        font-size: 24px; 
+    }
+
+    
+}
+
+.card-block__author {
+    margin-top: 20px;
+}
+
+.card-block__label {
+    margin-top: 10px;
+}
+
+.card-block__description {
+    margin-top: 8px;
+}
+
+.card-block__price {
+    margin-top: 30px;
+}
+
+.card-block__batton {
+    margin: 20px 0 30px;
+    max-width: 100%;
+    display: flex;
+    font-size: 20px; 
+    padding: 20px 60px;
+    align-items: center; 
+    background: #D4E8D9;
+    border: 1px solid #598D66;
+    color: #598D66;
+}
+
+//сделал, дать на проверку menu
+.card-block_button-menu {
+    max-width: 100%;
+    display: flex;
+    font-size: 20px; 
+    padding: 10px 20px;
+    align-items: flex-start; 
+    border-radius: 20px;
+    background: #D4E8D9;
+    border: none;
+    color: #2C2D35;
+   
+    
+
+    // &--green {
+    //     background: #376B44; 
+    //     color: #D4E8D9;
+    // }
+}
+
+// .card-block_button:active {
+//     background-color: #376B44;
+// }
+
+
+.card-block__menu__switching {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    overflow-x: auto;
+}
+.card-block__menu__text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.card-block__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card-block__catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+// ВОТ ТУТ НАДО ПОМЕНЯТЬ, ТАК ЧТОБЫ
+
+    .card {
+        background: #E1EDE6; 
+        //width: 100%;
+        //min-width: 100%;
+        padding: 20px 20px 30px 20px;
+
+        
+    }
+    .card-block_img {
+        background-image: url(../img/card/card_art1.jpg);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+.swipe-menu {
+    
+    display: none;
+    background-color: #598D66;
+    color: #2C2D35;
+    
+    
+}
+.swipe-content {
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    
+}
+.swipe-logo-content {
+    padding: 17px 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .card-block__catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card-block__menu {
+        display: grid;
+        gap: 20px;
+    }
+    .card-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .card-text--size-heading-2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .card-text--green {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .card-block__batton {
+        font-size: 18px;
+    }
+}
+// Может тут поменять
+@media (max-width: 510px) {
+    .card-block__catalog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+// @media (max-width: 456px) {
+//     .card-block__menu__switching {
+//         overflow-x: auto;
+//     }
+// }
+
+
+@media (max-width: 320px) {
+    .card-block__catalog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .example-picture__descriptino {
+        margin-left: 0;
+    }
+}
